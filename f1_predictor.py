@@ -55,6 +55,23 @@ TEAM_COLORS = {
     'Haas F1 Team': '#FFFFFF'
 }
 
+# UI Enhancement - Sidebar
+st.set_page_config(page_title="F1 ORACLE", page_icon="🏎️", layout="wide")
+st.sidebar.title("⚙️ App Info")
+st.sidebar.markdown("""
+**F1 ORACLE**
+
+Predict the 2025 Formula 1 season using machine learning.
+
+- Model: Random Forest
+- Data: Historical F1 Data
+- Dev: Shashwat Kashyap
+
+[GitHub Repo](https://github.com/Shashwat-k-9114/F1-ORACLE)
+""")
+
+# Placeholder - The rest of your simulation and driver input logic continues below as-is
+
 class F1Predictor:
     def __init__(self, data_path='f1data'):
         self.data_path = data_path
@@ -1427,7 +1444,21 @@ def main():
                 <li><em>Golden Realms V4</em></li>
             </ul>
         </div>
+                    
+        
+
         """, unsafe_allow_html=True)
+    # 🧾 Footer
+    st.markdown("<hr>", unsafe_allow_html=True)
+    st.markdown(
+        "<p style='text-align: center; font-style: italic;'>"
+        "Built during a caffeine overdose, under the influence of sleep deprivation, reckless ambition, "
+        "and just enough genius to make it work — which, frankly, is still more coherent than most Ferrari strategy decisions.<br>"
+        "— Shashwat Kashyap ☕💻🏎️"
+        "</p>",
+        unsafe_allow_html=True
+    )
+
 
 
 if __name__ == "__main__":
