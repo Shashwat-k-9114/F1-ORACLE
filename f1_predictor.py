@@ -443,13 +443,13 @@ def load_lottieurl(url: str):
 def main():
     # Load animations
     lottie_race = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_0yfsb3a1.json")
-    lottie_trophy = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_igbprs.json")
-    lottie_developer = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_6wutsrox.json")
-    lottie_education = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_0skurerf.json")
-    lottie_skills = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_1a8dx7qz.json")
-    lottie_experience = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_isdvjfzo.json")
-    lottie_projects = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_gn0y1r6n.json")
-    lottie_honors = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_5tkzkblw.json")
+    lottie_trophy = load_lottieurl("https://lottie.host/3ed0f744-3c8c-42bd-a471-b17eaab57ffb/daCVHt1yDp.json")
+    lottie_developer = load_lottieurl("https://lottie.host/acb26878-f6c7-4fa3-bcfe-d7c11d9f5ccc/RkpBW9bdFE.json")
+    lottie_education = load_lottieurl("https://lottie.host/ea45341b-3846-413c-ae38-611449305ef8/Eh9NrUQ8WD.json")
+    lottie_skills = load_lottieurl("https://lottie.host/3033fbf9-5575-4abf-b342-38f1282cacd1/7GRHwbkBNR.json")
+    lottie_experience = load_lottieurl("https://lottie.host/1c1cfd36-21d1-4ec7-b15e-7d0169815c68/gRFKd8spZ8.json")
+    lottie_projects = load_lottieurl("https://lottie.host/bd40a302-53cc-4685-88fb-293406119a4a/wXyjii2gRt.json")
+    lottie_honors = load_lottieurl("https://lottie.host/247d4b3a-1b2e-4deb-9611-6de44f0bfc23/5x96E8csNO.json")
 
     # Custom CSS
     st.markdown(f"""
@@ -1195,6 +1195,8 @@ def main():
             human behaviour, and design.</p>
         </div>
         """, unsafe_allow_html=True)
+        if lottie_skills:
+                st_lottie(lottie_skills, height=200, key="skills")
 
         st.markdown('<div class="section-title">Technical Skills</div>', unsafe_allow_html=True)
         st.markdown("""
